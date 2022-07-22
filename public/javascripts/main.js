@@ -159,6 +159,7 @@ function load_data() {
 $(document).ready(function () {
   load_data();
   $("#add_data").click(function () {
+    $(".modal-title").html('Địa chỉ mới');
     $("#form-inf")[0].reset();
 
     $("#action").val("Add");
@@ -209,7 +210,7 @@ $(document).ready(function () {
   });
   $(document).on("click", ".edit", function () {
     var id = $(this).data("id");
-
+    $(".modal-title").html('Chỉnh sửa địa chỉ');
     $("#action").val("Edit");
 
     $("#action_button").text("Edit");
